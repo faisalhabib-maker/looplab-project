@@ -1,0 +1,95 @@
+body {
+  background: #333;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: 3px solid #008ed6;
+  background: #232627;
+  opacity: .7;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  color: white;
+}
+
+#main-home {
+  background: url("img/home.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 710px;
+}
+
+#main-home .dark-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  min-height: 710px;
+}
+
+#main-home .home-inner {
+  padding-top: 140px;
+  padding-bottom: 50px;
+}
+
+#main-home .fa {
+  background-color: white;
+  color: #008ed6;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+#main-home .form-card {
+  opacity: .8;
+  background-color: #096CD5;
+}
+
+.exicon {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+#create-main .fa {
+  background-color: white;
+  color: #008ed6;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.conta {
+  width: 40%;
+  margin: auto;
+}
+
+#main-share .fa {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #main-home h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #explore-main .ppp {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .conta {
+    width: 100%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

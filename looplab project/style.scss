@@ -1,0 +1,104 @@
+
+$body-bg: #333;
+$font-color: #fff;
+$primary-color:  #008ed6;
+$icon-font-size: 30px;
+$navbar-bg: #232627;
+
+@mixin faicon($value) {
+    
+        @if $value == small {
+        background-color: rgb(255, 255, 255);
+        color: $primary-color;
+        padding: 5px;
+        font-size: 25px;
+        border-radius: 5px;
+        }
+        @else{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        font-size: 25px;
+        border-radius: 5px;
+        }
+    
+}
+
+body {
+    background: $body-bg;
+    color: $font-color;
+}
+
+
+ .navbar{
+    border-bottom: 3px solid $primary-color;
+    background: $navbar-bg;
+    opacity: .7;
+
+    ul li a{
+        font-size: 20px;
+       color: white;
+    }
+}
+#main-home{
+    background: url('img/home.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 710px;
+
+    .dark-overlay{
+        background: rgba(0,0,0,0.7) ;
+        min-height: 710px;
+    }
+    .home-inner{
+        padding-top: 140px;
+        padding-bottom: 50px;
+    }
+    .fa{
+       @include faicon(small);
+    }
+    .form-card{
+        opacity: .8;
+        background-color: #096CD5;
+    }
+}
+
+    .exicon{
+        @include faicon(ad);
+    }
+
+#create-main{
+
+    .fa{
+        @include faicon(small);
+    }
+}
+.conta{
+    width: 40%;
+    margin: auto
+   
+}
+
+#main-share{
+    .fa{
+        @include faicon(smaall);
+    }
+}
+@media screen and (max-width:576px){
+    #main-home h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 576px){
+    #explore-main .ppp{
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 992px){
+    .conta{
+        width: 100%;
+        margin: auto
+    }
+}
